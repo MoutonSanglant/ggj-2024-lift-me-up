@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 41930426}
   - component: {fileID: 41930425}
   - component: {fileID: 41930424}
+  - component: {fileID: 41930428}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -217,6 +218,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 770519023}
   - {fileID: 1407830805}
   - {fileID: 1294086925}
   - {fileID: 798011612}
@@ -227,6 +229,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &41930428
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41930423}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d075181677bf4f8aa7c148084cfe195, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &89164658
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,7 +627,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1407830805}
+  m_Father: {fileID: 41930427}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1237,7 +1260,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 770519023}
   - {fileID: 939776772}
   - {fileID: 1840740830}
   m_Father: {fileID: 41930427}
@@ -1510,6 +1532,14 @@ MonoBehaviour:
   - {fileID: 1571060702}
   - {fileID: 1425551479}
   StageDisplay: {fileID: 1348331291}
+  TransitionAnimator: {fileID: 41930428}
+  TransitionDuration: 0.6
+  TransitionExpression: {fileID: 0}
+  TransitionDisplayedMessage:
+  - Language: 0
+    Value: Please wait...
+  - Language: 1
+    Value: Veuillez patienter...
   StartDialog: {fileID: 11400000, guid: 9d1a37f9dd3cbe40cace8964fc1577dd, type: 2}
 --- !u!4 &1741729096
 Transform:

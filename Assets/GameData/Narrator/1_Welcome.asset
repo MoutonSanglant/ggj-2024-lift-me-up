@@ -19,7 +19,7 @@ MonoBehaviour:
     Value: 'LiftBot:
 
       Bonjour employr N09-47, que puis-je faire pour vous aujourd''hui
-      ?d'
+      ?'
   <DisplayedAvatar>k__BackingField: {fileID: 0}
   <PlayerAnswers>k__BackingField:
   - Locales:
@@ -28,3 +28,5 @@ MonoBehaviour:
     - Language: 1
       Value: Bonjour
     NextDialog: {fileID: 11400000, guid: ca9ab58b60f45aed9b5862d59345efd3, type: 2}
+  <Stage>k__BackingField: 0
+  <PlayLiftAnimation>k__BackingField: 0

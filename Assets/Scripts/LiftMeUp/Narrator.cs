@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+using HelloGameDev.Localization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,8 +13,13 @@ namespace LiftMeUp
         [SerializeField] private Image Avatar;
         [SerializeField] private TMP_Text[] PlayerAnswersButtons;
         [SerializeField] private TMP_Text StageDisplay;
+        [SerializeField] private Animator TransitionAnimator;
+        [SerializeField] private float TransitionDuration = 0.6f;
+        [SerializeField] private Sprite TransitionExpression;
+        [SerializeField] private LocalizationManager.Locale[] TransitionDisplayedMessage;
 
         [SerializeField] private NarratorDialog StartDialog;
+        private static readonly int IsLifting = Animator.StringToHash("isLifting");
 
         public static Narrator Instance { get; private set; }
 
@@ -32,20 +40,21 @@ namespace LiftMeUp
 
         private void DisplayDialog(NarratorDialog dialog)
         {
-            NarratorPanel.text = dialog.LocalizedText;
-            Avatar.sprite = dialog.DisplayedAvatar;
+            NarratorPanel.text = LocalizationManager.GetLocalizedText(TransitionDisplayedMessage);
+            Avatar.sprite = TransitionExpression;
 
-            for (int i = 0; i < PlayerAnswersButtons.Length; i++)
+            for (var i = 0; i < PlayerAnswersButtons.Length; i++)
             {
                 var buttonText = PlayerAnswersButtons[i];
                 var buttonTransform = buttonText.transform.parent;
+
+                buttonTransform.gameObject.SetActive(false);
 
                 if (i < dialog.PlayerAnswers.Length)
                 {
                     var answer = dialog.PlayerAnswers[i];
                     var button = buttonTransform.GetComponent<Button>();
 
-                    buttonTransform.gameObject.SetActive(true);
                     buttonText.text = answer.LocalizedText;
 
                     button.onClick.RemoveAllListeners();
@@ -53,13 +62,48 @@ namespace LiftMeUp
                     {
                         SetDialog(answer.NextDialog);
                     });
-
-                    StageDisplay.text = dialog.Stage.ToString();
                 }
-                else
-                    buttonTransform.gameObject.SetActive(false);
 
+                if (dialog.PlayLiftAnimation)
+                    StartCoroutine(StageTransition(TransitionDuration, DisplayNextDialog));
+                else
+                    DisplayNextDialog();
             }
+
+            return;
+
+
+            void DisplayNextDialog()
+            {
+                NarratorPanel.text = dialog.LocalizedText;
+                Avatar.sprite = dialog.DisplayedAvatar;
+                StageDisplay.text = dialog.Stage.ToString();
+
+                for (var i = 0; i < PlayerAnswersButtons.Length; i++)
+                {
+                    if (i >= dialog.PlayerAnswers.Length) continue;
+
+                    var buttonText = PlayerAnswersButtons[i];
+                    var buttonTransform = buttonText.transform.parent;
+
+                    buttonTransform.gameObject.SetActive(true);
+                }
+            }
+        }
+
+        private IEnumerator StageTransition(float duration, Action callback)
+        {
+            TransitionAnimator.SetBool(IsLifting, true);
+
+            // TODO - start lift SFX
+
+            yield return new WaitForSeconds(duration);
+
+            TransitionAnimator.SetBool(IsLifting, false);
+
+            // TODO - stop lift SFX and play "ding" SFX
+
+            callback.Invoke();
         }
     }
 }

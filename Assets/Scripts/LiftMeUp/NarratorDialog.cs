@@ -12,15 +12,9 @@ namespace LiftMeUp
         [field: SerializeField] public Sprite DisplayedAvatar { get; private set; }
         [field: SerializeField] public PlayerAnswer[] PlayerAnswers { get; private set; }
         [field: SerializeField] public int Stage { get; private set; }
+        [field: SerializeField] public bool PlayLiftAnimation { get; private set; } = true;
 
-        public string LocalizedText => GetLocalizedText(Locales, LocalizationManager.Instance.ActiveLanguage);
-
-        private static string GetLocalizedText(LocalizationManager.Locale[] locales, LocalizationManager.Language language)
-        {
-            var locale = locales.FirstOrDefault(locale => locale.Language == language);
-
-            return locale == null ? "" : locale.Value;
-        }
+        public string LocalizedText => LocalizationManager.GetLocalizedText(Locales);
 
         [Serializable]
         public class PlayerAnswer
@@ -28,7 +22,7 @@ namespace LiftMeUp
             public LocalizationManager.Locale[] Locales;
             public NarratorDialog NextDialog;
 
-            public string LocalizedText => GetLocalizedText(Locales, LocalizationManager.Instance.ActiveLanguage);
+            public string LocalizedText => LocalizationManager.GetLocalizedText(Locales);
         }
     }
 }

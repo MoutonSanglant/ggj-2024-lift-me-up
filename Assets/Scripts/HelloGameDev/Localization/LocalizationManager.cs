@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace HelloGameDev.Localization
@@ -24,6 +26,13 @@ namespace HelloGameDev.Localization
         {
             Instance.ActiveLanguage = language;
             Instance.OnLanguageChange.Invoke(language);
+        }
+
+        public static string GetLocalizedText(IEnumerable<Locale> locales)
+        {
+            var locale = locales.FirstOrDefault(locale => locale.Language == Instance.ActiveLanguage);
+
+            return locale == null ? "" : locale.Value;
         }
 
         [Serializable]
