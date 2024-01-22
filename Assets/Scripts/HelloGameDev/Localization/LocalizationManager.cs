@@ -26,6 +26,14 @@ namespace HelloGameDev.Localization
             Instance.OnLanguageChange.Invoke(language);
         }
 
+        [Serializable]
+        public class Locale
+        {
+            public Language Language;
+            [TextArea]
+            public string Value;
+        }
+
         public enum Language
         {
             English,

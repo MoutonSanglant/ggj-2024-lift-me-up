@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -8,7 +7,9 @@ namespace HelloGameDev.Localization
     [RequireComponent(typeof(TMP_Text))]
     public class LocalizedLabel : MonoBehaviour
     {
-        [SerializeField] private Locale[] Locales;
+        private const string MissingLocaleText = "MISSING_LOCALE";
+
+        [SerializeField] private LocalizationManager.Locale[] Locales;
 
         private TMP_Text _text;
 
@@ -19,21 +20,11 @@ namespace HelloGameDev.Localization
             LocalizationManager.Instance.OnLanguageChange += UpdateText;
         }
 
-        public void UpdateText(LocalizationManager.Language language)
+        private void UpdateText(LocalizationManager.Language language)
         {
             var locale = Locales.FirstOrDefault(locale => locale.Language == language);
 
-            if (locale == null)
-                return;
-
-            _text.text = locale.Value;
-        }
-
-        [Serializable]
-        public class Locale
-        {
-            public LocalizationManager.Language Language;
-            public string Value;
+            _text.text = (locale == null) ? MissingLocaleText : locale.Value;
         }
     }
 }
