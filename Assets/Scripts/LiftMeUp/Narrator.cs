@@ -10,7 +10,8 @@ namespace LiftMeUp
     public class Narrator : MonoBehaviour
     {
         [SerializeField] private TMP_Text NarratorPanel;
-        [SerializeField] private Image Avatar;
+        [SerializeField] private Image DialogAvatar;
+        [SerializeField] private Image LiftAvatar;
         [SerializeField] private TMP_Text[] PlayerAnswersButtons;
         [SerializeField] private TMP_Text StageDisplay;
         [SerializeField] private Animator TransitionAnimator;
@@ -41,7 +42,8 @@ namespace LiftMeUp
         private void DisplayDialog(NarratorDialog dialog)
         {
             NarratorPanel.text = LocalizationManager.GetLocalizedText(TransitionDisplayedMessage);
-            Avatar.sprite = TransitionExpression;
+            DialogAvatar.sprite = TransitionExpression;
+            LiftAvatar.sprite = TransitionExpression;
 
             for (var i = 0; i < PlayerAnswersButtons.Length; i++)
             {
@@ -75,8 +77,11 @@ namespace LiftMeUp
 
             void DisplayNextDialog()
             {
+                var expression = LiftExpressionManager.GetSpriteFromState(dialog.LiftState);
+
+                LiftAvatar.sprite = expression;
+                DialogAvatar.sprite = expression;
                 NarratorPanel.text = dialog.LocalizedText;
-                Avatar.sprite = dialog.DisplayedAvatar;
                 StageDisplay.text = dialog.Stage.ToString();
 
                 for (var i = 0; i < PlayerAnswersButtons.Length; i++)

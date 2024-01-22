@@ -17,7 +17,7 @@ MonoBehaviour:
     Value: Where do you want to go?
   - Language: 1
     Value: A quel etage souhaitez-vous vous rendre ?
-  <DisplayedAvatar>k__BackingField: {fileID: 0}
+  <LiftState>k__BackingField: 2
   <PlayerAnswers>k__BackingField:
   - Locales: []
     NextDialog: {fileID: 0}
