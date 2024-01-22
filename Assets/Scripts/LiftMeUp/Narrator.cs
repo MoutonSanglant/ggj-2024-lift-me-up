@@ -65,7 +65,7 @@ namespace LiftMeUp
                 }
 
                 if (dialog.PlayLiftAnimation)
-                    StartCoroutine(StageTransition(TransitionDuration, DisplayNextDialog));
+                    StartCoroutine(StageTransition(TransitionDuration, dialog, DisplayNextDialog));
                 else
                     DisplayNextDialog();
             }
@@ -91,14 +91,26 @@ namespace LiftMeUp
             }
         }
 
-        private IEnumerator StageTransition(float duration, Action callback)
+        private IEnumerator StageTransition(float duration, NarratorDialog dialog, Action callback)
         {
             TransitionAnimator.SetBool(IsLifting, true);
 
             // TODO - start lift SFX
 
-            yield return new WaitForSeconds(duration);
+            var elapsed = 0f;
+            var currentStage = int.Parse(StageDisplay.text);
+            var targetStage = dialog.Stage;
 
+            while (elapsed < duration)
+            {
+                elapsed += Time.deltaTime;
+
+                StageDisplay.text = Mathf.Floor(Mathf.Lerp(currentStage, targetStage, elapsed / duration)).ToString();
+
+                yield return null;
+            }
+
+            StageDisplay.text = targetStage.ToString();
             TransitionAnimator.SetBool(IsLifting, false);
 
             // TODO - stop lift SFX and play "ding" SFX
