@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2115943910550407547, guid: 9f6fd5d8038b11e4ab9ce71776a855c0, type: 3}
+      propertyPath: Locales.Array.data[0].Value
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115943910550407547, guid: 9f6fd5d8038b11e4ab9ce71776a855c0, type: 3}
+      propertyPath: Locales.Array.data[1].Value
+      value: Jouer
+      objectReference: {fileID: 0}
     - target: {fileID: 5505977880222602932, guid: 9f6fd5d8038b11e4ab9ce71776a855c0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
