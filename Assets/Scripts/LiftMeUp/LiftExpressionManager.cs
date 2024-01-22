@@ -13,8 +13,6 @@ namespace LiftMeUp
         private void Awake()
         {
             Instance = this;
-
-            throw new NotImplementedException();
         }
 
         public static Sprite GetSpriteFromState(State state)
@@ -44,6 +42,10 @@ namespace LiftMeUp
             Angry = 8,
             Scared = 9,
             Surprised = 10,
+            Cuteness = 11,
+            Love = 12,
+            VeryAngry = 13,
+            VerySad = 14,
         }
     }
 }
