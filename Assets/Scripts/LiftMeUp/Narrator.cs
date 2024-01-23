@@ -62,18 +62,51 @@ namespace LiftMeUp
                     button.onClick.RemoveAllListeners();
                     button.onClick.AddListener(() =>
                     {
-                        SetDialog(answer.NextDialog);
+                        DisplayPostAnswerDialog(answer);
                     });
                 }
-
-                if (dialog.PlayLiftAnimation)
-                    StartCoroutine(FloorTransition(TransitionDuration, dialog, DisplayNextDialog));
-                else
-                    DisplayNextDialog();
             }
+
+            if (dialog.PlayLiftAnimation)
+                StartCoroutine(FloorTransition(TransitionDuration, dialog, DisplayNextDialog));
+            else
+                DisplayNextDialog();
 
             return;
 
+
+            void DisplayPostAnswerDialog(NarratorDialog.PlayerAnswer answer)
+            {
+                var expression = LiftExpressionManager.GetSpriteFromState(answer.LiftState);
+
+                LiftAvatar.sprite = expression;
+                DialogAvatar.sprite = expression;
+                NarratorPanel.text = answer.PostSelectionLocalizedText;
+                ColorPaletteManager.SwitchPalette(answer.Mood);
+
+                for (var i = 0; i < PlayerAnswersButtons.Length; i++)
+                {
+                    var buttonText = PlayerAnswersButtons[i];
+                    var buttonTransform = buttonText.transform.parent;
+
+                    if (i == 0)
+                    {
+                        var button = buttonTransform.GetComponent<Button>();
+
+                        buttonText.text = answer.PostSelectionButtonLocalizedText;
+
+                        buttonTransform.gameObject.SetActive(true);
+
+                        button.onClick.RemoveAllListeners();
+                        button.onClick.AddListener(() =>
+                        {
+                            SetDialog(answer.NextDialog);
+                        });
+                    }
+                    else
+                        buttonTransform.gameObject.SetActive(false);
+                }
+            }
 
             void DisplayNextDialog()
             {
