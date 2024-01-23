@@ -31,8 +31,8 @@ namespace LiftMeUp
                 },
                 PostSelectionButtonLocales = new LocalizationManager.Locale[]
                 {
-                    new() { Language = LocalizationManager.Language.English },
-                    new() { Language = LocalizationManager.Language.French },
+                    new() { Language = LocalizationManager.Language.English, Value = "..." },
+                    new() { Language = LocalizationManager.Language.French, Value = "..."},
                 },
             },
         };
