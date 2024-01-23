@@ -38,7 +38,6 @@ namespace LiftMeUp
         };
         [field: SerializeField] public int Floor { get; private set; }
         [field: SerializeField] public ColorPaletteManager.Mood Mood { get; private set; }
-        [field: SerializeField] public bool PlayLiftAnimation { get; private set; } = true;
 
         public string LocalizedText => LocalizationManager.GetLocalizedText(Locales);
 

@@ -67,7 +67,9 @@ namespace LiftMeUp
                 }
             }
 
-            if (dialog.PlayLiftAnimation)
+            var currentFloor = int.Parse(FloorDisplay.text);
+
+            if (dialog.Floor != currentFloor)
                 StartCoroutine(FloorTransition(TransitionDuration, dialog, DisplayNextDialog));
             else
                 DisplayNextDialog();
