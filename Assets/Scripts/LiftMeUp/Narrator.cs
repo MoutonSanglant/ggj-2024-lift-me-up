@@ -13,7 +13,7 @@ namespace LiftMeUp
         [SerializeField] private Image DialogAvatar;
         [SerializeField] private Image LiftAvatar;
         [SerializeField] private TMP_Text[] PlayerAnswersButtons;
-        [SerializeField] private TMP_Text StageDisplay;
+        [SerializeField] private TMP_Text FloorDisplay;
         [SerializeField] private Animator TransitionAnimator;
         [SerializeField] private float TransitionDuration = 0.6f;
         [SerializeField] private Sprite TransitionExpression;
@@ -67,7 +67,7 @@ namespace LiftMeUp
                 }
 
                 if (dialog.PlayLiftAnimation)
-                    StartCoroutine(StageTransition(TransitionDuration, dialog, DisplayNextDialog));
+                    StartCoroutine(FloorTransition(TransitionDuration, dialog, DisplayNextDialog));
                 else
                     DisplayNextDialog();
             }
@@ -82,7 +82,7 @@ namespace LiftMeUp
                 LiftAvatar.sprite = expression;
                 DialogAvatar.sprite = expression;
                 NarratorPanel.text = dialog.LocalizedText;
-                StageDisplay.text = dialog.Stage.ToString();
+                FloorDisplay.text = dialog.Floor.ToString();
                 ColorPaletteManager.SwitchPalette(dialog.Mood);
 
                 for (var i = 0; i < PlayerAnswersButtons.Length; i++)
@@ -97,26 +97,26 @@ namespace LiftMeUp
             }
         }
 
-        private IEnumerator StageTransition(float duration, NarratorDialog dialog, Action callback)
+        private IEnumerator FloorTransition(float duration, NarratorDialog dialog, Action callback)
         {
             TransitionAnimator.SetBool(IsLifting, true);
 
             // TODO - start lift SFX
 
             var elapsed = 0f;
-            var currentStage = int.Parse(StageDisplay.text);
-            var targetStage = dialog.Stage;
+            var currentFloor = int.Parse(FloorDisplay.text);
+            var targetFloor = dialog.Floor;
 
             while (elapsed < duration)
             {
                 elapsed += Time.deltaTime;
 
-                StageDisplay.text = Mathf.Floor(Mathf.Lerp(currentStage, targetStage, elapsed / duration)).ToString();
+                FloorDisplay.text = Mathf.Floor(Mathf.Lerp(currentFloor, targetFloor, elapsed / duration)).ToString();
 
                 yield return null;
             }
 
-            StageDisplay.text = targetStage.ToString();
+            FloorDisplay.text = targetFloor.ToString();
             TransitionAnimator.SetBool(IsLifting, false);
 
             // TODO - stop lift SFX and play "ding" SFX
