@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7787782503974024792}
   - component: {fileID: 6072347054679995878}
   - component: {fileID: 2115943910550407547}
+  - component: {fileID: 4730890401730990944}
   m_Layer: 5
   m_Name: Label
   m_TagString: Untagged
@@ -152,6 +153,19 @@ MonoBehaviour:
     Value: 
   - Language: 1
     Value: 
+--- !u!114 &4730890401730990944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6046512147711289447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830fdc385f216f1e8a0f5a0498ea44d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ColorIndex: 1
 --- !u!1 &8291798098523006525
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,6 +180,7 @@ GameObject:
   - component: {fileID: 6618209449317640248}
   - component: {fileID: 8242953055916518733}
   - component: {fileID: 8049144074249733398}
+  - component: {fileID: 5101658638636883574}
   m_Layer: 5
   m_Name: Generic button
   m_TagString: Untagged
@@ -416,3 +431,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5101658638636883574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8291798098523006525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830fdc385f216f1e8a0f5a0498ea44d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ColorIndex: 1

@@ -83,6 +83,7 @@ namespace LiftMeUp
                 DialogAvatar.sprite = expression;
                 NarratorPanel.text = dialog.LocalizedText;
                 StageDisplay.text = dialog.Stage.ToString();
+                ColorPaletteManager.SwitchPalette(dialog.Mood);
 
                 for (var i = 0; i < PlayerAnswersButtons.Length; i++)
                 {

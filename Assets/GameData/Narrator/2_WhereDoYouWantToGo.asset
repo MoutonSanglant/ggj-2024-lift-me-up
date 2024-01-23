@@ -24,4 +24,5 @@ MonoBehaviour:
   - Locales: []
     NextDialog: {fileID: 0}
   <Stage>k__BackingField: 0
+  <Mood>k__BackingField: 1
   <PlayLiftAnimation>k__BackingField: 0
