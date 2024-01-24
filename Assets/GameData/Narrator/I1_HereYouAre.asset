@@ -29,7 +29,8 @@ MonoBehaviour:
 
       Bonne journee !'
   <PlayerAnswers>k__BackingField:
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: bf61a69e65352fe408bb9556a2d61994, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: bf61a69e65352fe408bb9556a2d61994, type: 2}
     <Score>k__BackingField: 0
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 6

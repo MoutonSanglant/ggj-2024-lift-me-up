@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using HelloGameDev;
 using HelloGameDev.Localization;
 using TMPro;
 using UnityEngine;
@@ -91,6 +92,13 @@ namespace LiftMeUp
 
             void DisplayPostAnswerDialog(NarratorDialog.PlayerAnswer answer)
             {
+                if (answer.BackToTitleScreen)
+                {
+                    SceneTransitionManager.LoadScene(SceneTransitionManager.Scene.Title);
+
+                    return;
+                }
+
                 var expression = LiftExpressionManager.GetSpriteFromState(answer.Expression);
 
                 _score += answer.Score;

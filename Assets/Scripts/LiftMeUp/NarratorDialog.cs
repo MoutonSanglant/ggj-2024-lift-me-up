@@ -44,6 +44,7 @@ namespace LiftMeUp
         [Serializable]
         public class PlayerAnswer
         {
+            [field: SerializeField] public bool BackToTitleScreen { get; private set; }
             [field: SerializeField] public NarratorDialog NextDialog { get; private set; }
             [field: SerializeField] public int Score { get; private set; }
             [field: SerializeField] public ColorPaletteManager.Mood Mood { get; private set; }

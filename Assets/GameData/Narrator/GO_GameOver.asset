@@ -21,7 +21,8 @@ MonoBehaviour:
   - Language: 1
     Value: 
   <PlayerAnswers>k__BackingField:
-  - <NextDialog>k__BackingField: {fileID: 0}
+  - <BackToTitleScreen>k__BackingField: 1
+    <NextDialog>k__BackingField: {fileID: 0}
     <Score>k__BackingField: 0
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 0

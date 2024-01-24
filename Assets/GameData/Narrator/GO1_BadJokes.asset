@@ -30,7 +30,8 @@ MonoBehaviour:
       Rentre
       chez toi'
   <PlayerAnswers>k__BackingField:
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 9fd5ec3ac5d6a1242a5b4d7c0f702d16, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: 9fd5ec3ac5d6a1242a5b4d7c0f702d16, type: 2}
     <Score>k__BackingField: 0
     <Mood>k__BackingField: 4
     <Expression>k__BackingField: 13
