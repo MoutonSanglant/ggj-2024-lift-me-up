@@ -50,6 +50,7 @@ namespace LiftMeUp
             Happy,
             Sad,
             Angry,
+            GameOver,
         }
 
         public enum ColorIndex
