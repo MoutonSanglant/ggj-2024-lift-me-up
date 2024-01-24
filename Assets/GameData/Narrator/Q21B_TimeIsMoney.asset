@@ -21,7 +21,7 @@ MonoBehaviour:
 
       Ha ha ha ha
 
-      Saving time with AIs?
+      Saving time with Artificial intelligence?
 
       That''s
       a good one!'
@@ -30,12 +30,13 @@ MonoBehaviour:
 
       Ha ha ha ha
 
-      Gagner du temps grace a l''IA ?
+      Gagner du temps grace a l''intelligence
+      artificielle ?
 
-      Elle
-      est bien bonne !!'
+      Elle est bien bonne !!'
   <PlayerAnswers>k__BackingField:
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 373d6938c5a084f4494eb30d395c9809, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: 373d6938c5a084f4494eb30d395c9809, type: 2}
     <Score>k__BackingField: 1
     <Mood>k__BackingField: 1
     <Expression>k__BackingField: 3

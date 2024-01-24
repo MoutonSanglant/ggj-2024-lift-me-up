@@ -25,7 +25,8 @@ MonoBehaviour:
 
       Tu vas devoir faire mieux'
   <PlayerAnswers>k__BackingField:
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 87adaacec403acc4bb5da01cfde0a945, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: 87adaacec403acc4bb5da01cfde0a945, type: 2}
     <Score>k__BackingField: -3
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 5
@@ -48,13 +49,14 @@ MonoBehaviour:
       Value: Too bad, it was really funny
     - Language: 1
       Value: Dommage, elle etait vraiment drole
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 87adaacec403acc4bb5da01cfde0a945, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: 87adaacec403acc4bb5da01cfde0a945, type: 2}
     <Score>k__BackingField: -1
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 5
     Locales:
     - Language: 0
-      Value: Why do they call them lifts in the UK & elevators in the US?
+      Value: Why do they call them lifts in the UK and elevators in the US?
     - Language: 1
       Value: Quelle est le point commun entre un ascenceur et une cigarette ?
     PostSelectionLocales:
@@ -69,7 +71,8 @@ MonoBehaviour:
       Value: I'll try again
     - Language: 1
       Value: Je reessaie
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
     <Score>k__BackingField: 0
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 0
@@ -92,7 +95,8 @@ MonoBehaviour:
       Value: How?
     - Language: 1
       Value: Pardon ?
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 87adaacec403acc4bb5da01cfde0a945, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: 87adaacec403acc4bb5da01cfde0a945, type: 2}
     <Score>k__BackingField: -2
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 5

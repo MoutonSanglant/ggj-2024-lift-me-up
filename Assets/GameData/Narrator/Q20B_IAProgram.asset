@@ -25,7 +25,8 @@ MonoBehaviour:
 
       Pourquoi tu veux a ce point y aller ?'
   <PlayerAnswers>k__BackingField:
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: c5e2647af6c8d5940b871944e39d3cf1, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: c5e2647af6c8d5940b871944e39d3cf1, type: 2}
     <Score>k__BackingField: 1
     <Mood>k__BackingField: 2
     <Expression>k__BackingField: 6
@@ -45,6 +46,6 @@ MonoBehaviour:
         Un rapport sur quoi ?'
     PostSelectionButtonLocales:
     - Language: 0
-      Value: On the time saved by AIs
+      Value: On the time saved by artificial intelligence
     - Language: 1
-      Value: Sur le temps que nous font gagner les IA
+      Value: Sur le temps que nous fait gagner l'intelligence artificielle

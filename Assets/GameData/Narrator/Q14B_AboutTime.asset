@@ -25,7 +25,8 @@ MonoBehaviour:
 
       Et en quoi ca consiste ?'
   <PlayerAnswers>k__BackingField:
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: d26d42bf9da966948ad02a87e3bc6f6e, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: d26d42bf9da966948ad02a87e3bc6f6e, type: 2}
     <Score>k__BackingField: -1
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 5
@@ -33,7 +34,7 @@ MonoBehaviour:
     - Language: 0
       Value: I sort documents all day long
     - Language: 1
-      Value: "Je trie des documents toute la journ\xE9e"
+      Value: Je trie des documents toute la journee
     PostSelectionLocales:
     - Language: 0
       Value: 'LiftBot:
@@ -48,7 +49,8 @@ MonoBehaviour:
       Value: ...
     - Language: 1
       Value: ...
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: d26d42bf9da966948ad02a87e3bc6f6e, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: d26d42bf9da966948ad02a87e3bc6f6e, type: 2}
     <Score>k__BackingField: 1
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 0
@@ -56,7 +58,7 @@ MonoBehaviour:
     - Language: 0
       Value: It's very boring
     - Language: 1
-      Value: "C'est tr\xE8s ennuyeux"
+      Value: C'est tres ennuyeux
     PostSelectionLocales:
     - Language: 0
       Value: 'LiftBot:

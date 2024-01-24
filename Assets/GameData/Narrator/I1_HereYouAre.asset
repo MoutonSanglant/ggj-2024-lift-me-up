@@ -36,7 +36,7 @@ MonoBehaviour:
     <Expression>k__BackingField: 6
     Locales:
     - Language: 0
-      Value: 
+      Value: This is the wrong floor...
     - Language: 1
       Value: Ce n'est pas le bon etage...
     PostSelectionLocales:
