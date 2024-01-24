@@ -32,7 +32,10 @@ namespace HelloGameDev
         private void Awake()
         {
             if (_instance != null)
+            {
                 Destroy(gameObject);
+                return;
+            }
 
             _instance = this;
             _audioSource = GetComponent<AudioSource>();

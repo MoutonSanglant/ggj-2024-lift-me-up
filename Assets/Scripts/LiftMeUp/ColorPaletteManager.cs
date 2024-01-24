@@ -17,13 +17,22 @@ namespace LiftMeUp
 
         private void Awake()
         {
-            Instance = this;
+            if (Instance != null)
+            {
+                Destroy(gameObject);
+                return;
+            }
 
-            SwitchPalette(StartMood);
+            Instance = this;
 
             SceneTransitionManager.OnSceneWillChange += () =>
             {
                 OnPaletteChange = _ => { };
+            };
+
+            SceneManager.sceneLoaded += (_, _) =>
+            {
+                SwitchPalette(StartMood);
             };
         }
 
