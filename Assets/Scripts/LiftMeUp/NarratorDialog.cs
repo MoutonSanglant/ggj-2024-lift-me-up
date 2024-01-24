@@ -7,12 +7,14 @@ namespace LiftMeUp
     [CreateAssetMenu(fileName = "NarratorDialog", menuName = "LiftMeUp/NarratorDialog")]
     public class NarratorDialog : ScriptableObject
     {
+        [field: SerializeField] public int Floor { get; private set; }
+        [field: SerializeField] public ColorPaletteManager.Mood Mood { get; private set; }
+        [field: SerializeField] public LiftExpressionManager.State Expression { get; private set; }
         [SerializeField] private LocalizationManager.Locale[] Locales =
         {
             new() { Language = LocalizationManager.Language.English },
             new() { Language = LocalizationManager.Language.French },
         };
-        [field: SerializeField] public LiftExpressionManager.State LiftState { get; private set; }
 
         [field: SerializeField]
         public PlayerAnswer[] PlayerAnswers { get; private set; } =
@@ -36,20 +38,19 @@ namespace LiftMeUp
                 },
             },
         };
-        [field: SerializeField] public int Floor { get; private set; }
-        [field: SerializeField] public ColorPaletteManager.Mood Mood { get; private set; }
 
         public string LocalizedText => LocalizationManager.GetLocalizedText(Locales);
 
         [Serializable]
         public class PlayerAnswer
         {
+            [field: SerializeField] public NarratorDialog NextDialog { get; private set; }
+            [field: SerializeField] public int Score { get; private set; }
+            [field: SerializeField] public ColorPaletteManager.Mood Mood { get; private set; }
+            [field: SerializeField] public LiftExpressionManager.State Expression { get; private set; }
             public LocalizationManager.Locale[] Locales;
             public LocalizationManager.Locale[] PostSelectionLocales;
             public LocalizationManager.Locale[] PostSelectionButtonLocales;
-            public NarratorDialog NextDialog;
-            [field: SerializeField] public LiftExpressionManager.State LiftState { get; private set; }
-            [field: SerializeField] public ColorPaletteManager.Mood Mood { get; private set; }
 
             public string LocalizedText => LocalizationManager.GetLocalizedText(Locales);
             public string PostSelectionLocalizedText => LocalizationManager.GetLocalizedText(PostSelectionLocales);
