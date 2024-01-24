@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q16D_Muted
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 56
+  <Mood>k__BackingField: 2
+  <Expression>k__BackingField: 9
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      ...'
+  - Language: 1
+    Value: 'LiftBot:
+
+      ...'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 87734fb36589ffc49b5c76eb0ece3631, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 2
+    <Expression>k__BackingField: 6
+    Locales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        ...'
+    - Language: 1
+      Value: 'LiftBot:
+
+        ...'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...

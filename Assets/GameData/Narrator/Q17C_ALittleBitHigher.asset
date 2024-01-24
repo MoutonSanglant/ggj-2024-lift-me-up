@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q17C_ALittleBitHigher
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 36
+  <Mood>k__BackingField: 2
+  <Expression>k__BackingField: 6
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      Maybe...
+
+      Could you give meaning to my life?'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Peut-etre...
+
+      Est-ce que tu pourrais donner un
+      sens a ma vie ?'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 0}
+    <Score>k__BackingField: 1
+    <Mood>k__BackingField: 2
+    <Expression>k__BackingField: 6
+    Locales:
+    - Language: 0
+      Value: Move upward?
+    - Language: 1
+      Value: Vers le haut ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        You''re right, if you want to go far in life, you
+        have to elevate yourself spiritually'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu as raison, si on veut aller loin dans la vie,
+        il faut s''elever spirituellement'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: That's right!
+    - Language: 1
+      Value: Tout a fait !

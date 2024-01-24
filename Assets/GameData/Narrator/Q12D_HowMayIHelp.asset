@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q12D_HowMayIHelp
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 69
+  <Mood>k__BackingField: 1
+  <Expression>k__BackingField: 3
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      What advice would you like?'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Quels conseils veux-tu ?'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
+    <Score>k__BackingField: -3
+    <Mood>k__BackingField: 2
+    <Expression>k__BackingField: 14
+    Locales:
+    - Language: 0
+      Value: Four... And... Two?
+    - Language: 1
+      Value: Quatre... Et... Deux ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        You''re breaking my heart!'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu me brises le coeur !'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 2f2343dd24192cb40a42c7dc367a5724, type: 2}
+    <Score>k__BackingField: 1
+    <Mood>k__BackingField: 1
+    <Expression>k__BackingField: 3
+    Locales:
+    - Language: 0
+      Value: I have no confidence in myself
+    - Language: 1
+      Value: Je n'ai pas confiance en moi
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Let me help you!'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Laisse-moi t''aider !'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 2f2343dd24192cb40a42c7dc367a5724, type: 2}
+    <Score>k__BackingField: -1
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 0
+    Locales:
+    - Language: 0
+      Value: What should I say?
+    - Language: 1
+      Value: Qu'est-ce que je dois lui dire ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        As an AI, I cannot provide assistance that is unethical,
+        like helping to increase the world''s population!'
+    - Language: 1
+      Value: 'LiftBot:
+
+        En tant qu''IA, je ne peux pas fournir d''assistance
+        qui vont contre l''ethique, comme aider a l''accroissement de la population
+        mondiale !'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Thank you...
+    - Language: 1
+      Value: Merci...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 2f2343dd24192cb40a42c7dc367a5724, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 10
+    Locales:
+    - Language: 0
+      Value: My job is too stressful...
+    - Language: 1
+      Value: Mon travail me stresse trop...
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        It''s better to solve this problem first'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Il vaut mieux regler ce probleme en priorite'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Ok
+    - Language: 1
+      Value: Ok

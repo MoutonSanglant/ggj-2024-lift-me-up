@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q13A_MyJobIs
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 81
+  <Mood>k__BackingField: 1
+  <Expression>k__BackingField: 2
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      Come on! Tell me all about your work!'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Allez ! Racontes-moi tout sur ton travail !'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: e5031fb101059064da7ed1ed585d75af, type: 2}
+    <Score>k__BackingField: 3
+    <Mood>k__BackingField: 2
+    <Expression>k__BackingField: 7
+    Locales:
+    - Language: 0
+      Value: It depresses me
+    - Language: 1
+      Value: Ca me deprime
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        You should talk to someone'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu devrais en parler a quelqu''un'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
+    <Score>k__BackingField: -3
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 5
+    Locales:
+    - Language: 0
+      Value: In fact, I'd rather not talk about it
+    - Language: 1
+      Value: En fait, je prefere ne pas en parler
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Never mind, let''s talk about something else'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tant pis, parlons d''autre chose'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 9aae154c4d000d740a0b0549ae7ae834, type: 2}
+    <Score>k__BackingField: 1
+    <Mood>k__BackingField: 1
+    <Expression>k__BackingField: 10
+    Locales:
+    - Language: 0
+      Value: I write reports
+    - Language: 1
+      Value: Je redige des rapports
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Reports? About what?'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Des rapports ? Qui parlent de quoi ?'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: How to save time
+    - Language: 1
+      Value: Comment gagner du temps
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 9aae154c4d000d740a0b0549ae7ae834, type: 2}
+    <Score>k__BackingField: 2
+    <Mood>k__BackingField: 1
+    <Expression>k__BackingField: 10
+    Locales:
+    - Language: 0
+      Value: I analyze how to save time
+    - Language: 1
+      Value: J'analyse comment gagner du temps
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Saving time? What''s the point?'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Gagner du temps ? A quoi bon ?'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: So you don't lose any!
+    - Language: 1
+      Value: Pour eviter d'en perdre !

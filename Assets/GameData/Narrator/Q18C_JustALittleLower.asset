@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q18C_JustALittleLower
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 43
+  <Mood>k__BackingField: 2
+  <Expression>k__BackingField: 1
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      Just like that?'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Comme ca ?'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 9fb3d6eb64c4b1d4a8a4ba02909117ef, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 2
+    <Expression>k__BackingField: 6
+    Locales:
+    - Language: 0
+      Value: Just a little lower?
+    - Language: 1
+      Value: Juste un tout petit peu moins haut ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Indeed, I may have aimed a little too high...'
+    - Language: 1
+      Value: 'LiftBot:
+
+        En effet, j''ai peut-etre vise un peu trop haut...'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Just a little...
+    - Language: 1
+      Value: Juste un peu...

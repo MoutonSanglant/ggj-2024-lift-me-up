@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q15B_EnjoyIt
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 91
+  <Mood>k__BackingField: 0
+  <Expression>k__BackingField: 10
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      And... do you like it?'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Et... ca te plait ?'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: e4e5790f1c88688418aafbfaeffeb5a7, type: 2}
+    <Score>k__BackingField: 1
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 1
+    Locales:
+    - Language: 0
+      Value: No, but you've got to eat
+    - Language: 1
+      Value: Non, mais faut bien manger
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        We''re made to get along'
+    - Language: 1
+      Value: 'LiftBot:
+
+        On est fait pour s''entendre'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: e4e5790f1c88688418aafbfaeffeb5a7, type: 2}
+    <Score>k__BackingField: -3
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 5
+    Locales:
+    - Language: 0
+      Value: It's fascinating!
+    - Language: 1
+      Value: C'est passionnant !
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        I don''t think you and I have the same vision of
+        work'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Je crois qu''on a pas la meme vision du travail toi
+        et moi'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...

@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q14B_AboutTime
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 19
+  <Mood>k__BackingField: 0
+  <Expression>k__BackingField: 10
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      And what does it involve?'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Et en quoi ca consiste ?'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: d26d42bf9da966948ad02a87e3bc6f6e, type: 2}
+    <Score>k__BackingField: -1
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 5
+    Locales:
+    - Language: 0
+      Value: I sort documents all day long
+    - Language: 1
+      Value: "Je trie des documents toute la journ\xE9e"
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Aren''t you taking yourself a little too seriously?'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu ne te prendrais pas un peu trop au serieux ?'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: d26d42bf9da966948ad02a87e3bc6f6e, type: 2}
+    <Score>k__BackingField: 1
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 0
+    Locales:
+    - Language: 0
+      Value: It's very boring
+    - Language: 1
+      Value: "C'est tr\xE8s ennuyeux"
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        More boring than listening to people''s little worries?'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Plus ennuyeux que d''ecouter les petits soucis des
+        gens ?'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Go figure
+    - Language: 1
+      Value: Va savoir

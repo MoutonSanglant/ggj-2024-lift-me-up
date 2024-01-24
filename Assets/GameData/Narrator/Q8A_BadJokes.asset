@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q8A_BadJokes
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: -5
+  <Mood>k__BackingField: 0
+  <Expression>k__BackingField: 5
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      I''ll give you one more chance'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Je te laisse encore une chance'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
+    <Score>k__BackingField: 1
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 1
+    Locales:
+    - Language: 0
+      Value: What's the answer to the meaning of life, the universe and everything
+        else?
+    - Language: 1
+      Value: Quelle est la reponse au sens de la vie, de l'univers et tout le reste
+        ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Nice try, I see you know your classics'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Bien essaye, je vois que tu a revise tes classiques'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Dang!
+    - Language: 1
+      Value: Zut !
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 78ff862d1ab6eb04fb01b95efc99380f, type: 2}
+    <Score>k__BackingField: -5
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 8
+    Locales:
+    - Language: 0
+      Value: What's the greatest paradox for an elevator?
+    - Language: 1
+      Value: Quel est le comble pour un ascenseur ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Having to put up with little jokers like you'
+    - Language: 1
+      Value: 'LiftBot:
+
+        De devoir se farcir des petits blagueurs comme toi'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Wrong answer!
+    - Language: 1
+      Value: Mauvaise reponse !
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 8
+    Locales:
+    - Language: 0
+      Value: Do you enjoy it?
+    - Language: 1
+      Value: Et ca t'amuse ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        The shortest route from one place to another isn''t
+        always a straight line'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Le chemin le plus court pour aller d''un endroit
+        a un autre n''est pas toujours une ligne droite'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: What's wrong? I don't get it!
+    - Language: 1
+      Value: Quoi ? J'ai rien compris !
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 78ff862d1ab6eb04fb01b95efc99380f, type: 2}
+    <Score>k__BackingField: -2
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 5
+    Locales:
+    - Language: 0
+      Value: What's yellow, going up and down?
+    - Language: 1
+      Value: Qu'est-ce qui est jaune, qui monte et qui descend ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        And you think you''re funny?'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Et tu te crois drole ?'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...

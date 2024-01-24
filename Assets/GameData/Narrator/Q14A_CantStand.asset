@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q14A_CantStand
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 101
+  <Mood>k__BackingField: 2
+  <Expression>k__BackingField: 7
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      Have you ever thought about consulting?'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Tu as deja pense a consulter ?'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: fdf0316236360e9418bc1968d28c94cd, type: 2}
+    <Score>k__BackingField: 1
+    <Mood>k__BackingField: 2
+    <Expression>k__BackingField: 6
+    Locales:
+    - Language: 0
+      Value: I'm accompanied
+    - Language: 1
+      Value: Je suis accompagne par un psy
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Doesn''t seem to work very well'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Ca n''a pas l''air de tres bien marcher'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: fdf0316236360e9418bc1968d28c94cd, type: 2}
+    <Score>k__BackingField: 2
+    <Mood>k__BackingField: 2
+    <Expression>k__BackingField: 6
+    Locales:
+    - Language: 0
+      Value: We're all in the same boat
+    - Language: 1
+      Value: On est tous dans le meme bateau
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        You don''t look too happy about it'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Ca n''a pas l''air de te ravir'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: You've got to live
+    - Language: 1
+      Value: Faut bien vivre

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q13D_SomeAdvices
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 101
+  <Mood>k__BackingField: 1
+  <Expression>k__BackingField: 1
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      Relationships with others are not very complicated, you
+      just have to listen... be attentive... Caring...'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Les relations avec les autres, ce n''est pas tres complique,
+      il suffit d''etre a l''ecoute... Attentionne... Bienveillant...'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 6108f7573c467ab4da9aef87e4b23ee6, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 1
+    <Expression>k__BackingField: 12
+    Locales:
+    - Language: 0
+      Value: Understood
+    - Language: 1
+      Value: D'accord
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Are you ready? What floor is it on again?'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu es pret ? C''est a quel etage deja ?'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Floor 42
+    - Language: 1
+      Value: Etage 42

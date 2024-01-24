@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q15D_TooMuch
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 101
+  <Mood>k__BackingField: 2
+  <Expression>k__BackingField: 14
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      I think I''m at the end of my rope...
+
+      I''m carrying
+      too heavy a burden...'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Je crois que je suis au bout du rouleau...
+
+      Je
+      porte un trop lourd fardeau...'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
+    <Score>k__BackingField: -3
+    <Mood>k__BackingField: 2
+    <Expression>k__BackingField: 14
+    Locales:
+    - Language: 0
+      Value: Er... Why don't we talk about something else?
+    - Language: 1
+      Value: Euh... Et si on parlait d'autre chose ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        ...'
+    - Language: 1
+      Value: 'LiftBot:
+
+        ...'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 0e943c08a15b9b941b88821880d7628f, type: 2}
+    <Score>k__BackingField: 1
+    <Mood>k__BackingField: 2
+    <Expression>k__BackingField: 14
+    Locales:
+    - Language: 0
+      Value: Do you want to talk about it?
+    - Language: 1
+      Value: Tu veux en parler ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        ... Sure!'
+    - Language: 1
+      Value: 'LiftBot:
+
+        ... Oui !'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: I'm listening
+    - Language: 1
+      Value: Je t'ecoute
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 0e943c08a15b9b941b88821880d7628f, type: 2}
+    <Score>k__BackingField: 1
+    <Mood>k__BackingField: 2
+    <Expression>k__BackingField: 7
+    Locales:
+    - Language: 0
+      Value: What's the matter?
+    - Language: 1
+      Value: Que se passe t-il ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Getting all these people to their final destination
+        is...
+
+        It''s so hard!'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Amener tous ces gens a leur destination finale, c''est...
+
+        C''est
+        trop dur !'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: I understand...
+    - Language: 1
+      Value: Je comprends...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 31f30560e657f4047ad6af4769f41feb, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 1
+    <Expression>k__BackingField: 3
+    Locales:
+    - Language: 0
+      Value: Fart and you'll feel better
+    - Language: 1
+      Value: Pete un coup, ca ira mieux
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        ... ... ...'
+    - Language: 1
+      Value: 'LiftBot:
+
+        ... ... ...'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...

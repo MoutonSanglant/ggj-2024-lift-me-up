@@ -10,36 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
-  m_Name: 1_Welcome
+  m_Name: GO2_
   m_EditorClassIdentifier: 
+  <Floor>k__BackingField: -999
+  <Mood>k__BackingField: 4
+  <Expression>k__BackingField: 8
   Locales:
   - Language: 0
-    Value: Hello
+    Value: 'LiftBot:
+
+      GAME OVER !'
   - Language: 1
     Value: 'LiftBot:
 
-      Bonjour employe N09-47, que puis-je faire pour vous aujourd''hui
-      ?'
-  <LiftState>k__BackingField: 0
+      GAME OVER !'
   <PlayerAnswers>k__BackingField:
-  - Locales:
+  - <NextDialog>k__BackingField: {fileID: 0}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 0
+    Locales:
     - Language: 0
-      Value: Hello
+      Value: Try Again
     - Language: 1
-      Value: Bonjour
+      Value: Recommencer
     PostSelectionLocales:
     - Language: 0
       Value: 
     - Language: 1
-      Value: D'accord, allons-y
+      Value: 
     PostSelectionButtonLocales:
     - Language: 0
-      Value: 
+      Value: ...
     - Language: 1
-      Value: Ok
-    NextDialog: {fileID: 11400000, guid: ca9ab58b60f45aed9b5862d59345efd3, type: 2}
-    <LiftState>k__BackingField: 0
-    <Mood>k__BackingField: 0
-  <Floor>k__BackingField: 0
-  <Mood>k__BackingField: 0
-  <PlayLiftAnimation>k__BackingField: 0
+      Value: ...

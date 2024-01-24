@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q12A_TellMeMore
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 99
+  <Mood>k__BackingField: 0
+  <Expression>k__BackingField: 10
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      Do you want to talk about it?'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Tu veux en parler ?'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 95119b6d00f9f3447b8197a8f5f43bf2, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 1
+    Locales:
+    - Language: 0
+      Value: Are you sure about this?
+    - Language: 1
+      Value: Tu en es sur ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Of course, I love learning new things'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Bien sur, j''aime beaucoup apprendre de nouvelles
+        choses'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Well, then...
+    - Language: 1
+      Value: Bon...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 95119b6d00f9f3447b8197a8f5f43bf2, type: 2}
+    <Score>k__BackingField: 3
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 4
+    Locales:
+    - Language: 0
+      Value: You won't be interested
+    - Language: 1
+      Value: Ca ne t'interessera pas
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        You''d be surprised'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Au contraire !'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Well, then...
+    - Language: 1
+      Value: Bon...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: f7938bf8db911f84da1b4967e657f191, type: 2}
+    <Score>k__BackingField: -1
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 5
+    Locales:
+    - Language: 0
+      Value: No, thank you
+    - Language: 1
+      Value: Non, merci
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        How annoying you can be...'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Ce que tu peux etre ennuyeux...'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: f7938bf8db911f84da1b4967e657f191, type: 2}
+    <Score>k__BackingField: -3
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 5
+    Locales:
+    - Language: 0
+      Value: Top secret
+    - Language: 1
+      Value: C'est top secret
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        What a killjoy!'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Quel rabat-joie !'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...

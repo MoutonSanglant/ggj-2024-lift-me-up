@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q7_FirstSplit
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 0
+  <Mood>k__BackingField: 0
+  <Expression>k__BackingField: 0
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      You''ll have to do better'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Tu vas devoir faire mieux'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 87adaacec403acc4bb5da01cfde0a945, type: 2}
+    <Score>k__BackingField: -3
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 5
+    Locales:
+    - Language: 0
+      Value: Two men enter an elevator...
+    - Language: 1
+      Value: Deux hommes entrent dans un ascenseur...
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Stop! A *VERY* bad start'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Stop ! Ca commence TRES mal'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Too bad, it was really funny
+    - Language: 1
+      Value: Dommage, elle etait vraiment drole
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 87adaacec403acc4bb5da01cfde0a945, type: 2}
+    <Score>k__BackingField: -1
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 5
+    Locales:
+    - Language: 0
+      Value: Why do they call them lifts in the UK & elevators in the US?
+    - Language: 1
+      Value: Quelle est le point commun entre un ascenceur et une cigarette ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: "LiftBot:\nBecause we\u2019re raised differently"
+    - Language: 1
+      Value: 'LiftBot:
+
+        Facile: Les deux font descendre (des cendres)'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: I'll try again
+    - Language: 1
+      Value: Je reessaie
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 0
+    Locales:
+    - Language: 0
+      Value: Do you enjoy wasting people's time?
+    - Language: 1
+      Value: Ca t'amuses de faire perdre leur temps aux gens ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        I try to be helpful'
+    - Language: 1
+      Value: 'LiftBot:
+
+        J''essaie de rendre service'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: How?
+    - Language: 1
+      Value: Pardon ?
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 87adaacec403acc4bb5da01cfde0a945, type: 2}
+    <Score>k__BackingField: -2
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 5
+    Locales:
+    - Language: 0
+      Value: I'm in a hurry, I don't have time to play
+    - Language: 1
+      Value: Je suis presse, je n'ai pas le temps de jouer
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Me neither, there are people waiting for their turn'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Moi non plus, il y a des gens qui attendent leur
+        tour dehors'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...

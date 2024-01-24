@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q6_ThemeReveal
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: -200
+  <Mood>k__BackingField: 3
+  <Expression>k__BackingField: 6
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      Give me just one good reason to get up there'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Donne-moi une seule bonne raison de monter la-haut'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: e20c90d7a451da44bb2641b167b6b47c, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 3
+    <Expression>k__BackingField: 0
+    Locales:
+    - Language: 0
+      Value: It's all about work
+    - Language: 1
+      Value: C'est pour le travail
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        You won''t be sorry, will you?
+
+        Here''s the
+        deal: **make me laugh** and I''ll take you anywhere you want to go'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu n''en demordra pas, hein ?
+
+        Voila le deal:
+        **fais-moi rire** et je t''emmene ou tu veux'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: It's a deal!
+    - Language: 1
+      Value: Marche conclu!
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: e20c90d7a451da44bb2641b167b6b47c, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 3
+    <Expression>k__BackingField: 0
+    Locales:
+    - Language: 0
+      Value: I've got an appointment
+    - Language: 1
+      Value: J'ai rendez-vous
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        You won''t be sorry, will you?
+
+        Here''s the
+        deal: make me laugh and I''ll take you anywhere you want to go'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu n''en demordra pas, hein ?
+
+        Voila le deal:
+        fais-moi rire et je t''emmene ou tu veux'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: It's a deal!
+    - Language: 1
+      Value: Marche conclu!
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: e20c90d7a451da44bb2641b167b6b47c, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 3
+    <Expression>k__BackingField: 0
+    Locales:
+    - Language: 0
+      Value: None of your business
+    - Language: 1
+      Value: Ca ne te regarde pas
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        You won''t be sorry, will you?
+
+        Here''s the
+        deal: make me laugh and I''ll take you anywhere you want to go'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu n''en demordra pas, hein ?
+
+        Voila le deal:
+        fais-moi rire et je t''emmene ou tu veux'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: It's a deal!
+    - Language: 1
+      Value: Marche conclu!
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: e20c90d7a451da44bb2641b167b6b47c, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 3
+    <Expression>k__BackingField: 0
+    Locales:
+    - Language: 0
+      Value: It's personal
+    - Language: 1
+      Value: C'est personnel
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        You won''t be sorry, will you?
+
+        Here''s the
+        deal: make me laugh and I''ll take you anywhere you want to go'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu n''en demordra pas, hein ?
+
+        Voila le deal:
+        fais-moi rire et je t''emmene ou tu veux'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: It's a deal!
+    - Language: 1
+      Value: Marche conclu!

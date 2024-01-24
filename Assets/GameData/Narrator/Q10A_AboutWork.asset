@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q10A_AboutWork
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 21
+  <Mood>k__BackingField: 0
+  <Expression>k__BackingField: 5
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      And what''s your job?'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Et c''est quoi ton travail ?'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 40d1559a1a66853408c409de55b37101, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 5
+    Locales:
+    - Language: 0
+      Value: I work in administration
+    - Language: 1
+      Value: Je travaille dans l'administratif
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Ah, that sounds... boring'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Ah, ca a l''air... ennuyant'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: You're the one who asked
+    - Language: 1
+      Value: C'est toi qui a demande
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
+    <Score>k__BackingField: -2
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 5
+    Locales:
+    - Language: 0
+      Value: It's confidential
+    - Language: 1
+      Value: C'est confidentiel
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        You like secrets, don''t you?'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu aimes bien les petits secrets toi'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
+    <Score>k__BackingField: -1
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 0
+    Locales:
+    - Language: 0
+      Value: 2 times 21 equals?
+    - Language: 1
+      Value: "2 fois 21 \xE9gal ?"
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Nice try, but it failed'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Bien essaye, mais c''est rate'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Too bad
+    - Language: 1
+      Value: Dommage
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 40d1559a1a66853408c409de55b37101, type: 2}
+    <Score>k__BackingField: 1
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 1
+    Locales:
+    - Language: 0
+      Value: Unimportant paperwork
+    - Language: 1
+      Value: De la paperasse sans importance
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        You pique my curiosity'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu piques ma curiosite'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Is that so?
+    - Language: 1
+      Value: Ah bon ?

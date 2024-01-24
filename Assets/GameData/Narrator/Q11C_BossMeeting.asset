@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q11C_BossMeeting
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: -42
+  <Mood>k__BackingField: 0
+  <Expression>k__BackingField: 0
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      What do you have to say for yourself?'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Qu''est ce que tu as a dire pour ta defense ?'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
+    <Score>k__BackingField: -2
+    <Mood>k__BackingField: 3
+    <Expression>k__BackingField: 13
+    Locales:
+    - Language: 0
+      Value: It's an emergency
+    - Language: 1
+      Value: C'est une urgence
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Well... I''m going to have to call in a meme...
+
+        You
+        shall not pass!'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Bon... Je vais devoir faire appel a un meme...
+
+        Vous
+        ne passerez pas !'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
+    <Score>k__BackingField: -1
+    <Mood>k__BackingField: 3
+    <Expression>k__BackingField: 8
+    Locales:
+    - Language: 0
+      Value: What is the answer to life, the universe and ...
+    - Language: 1
+      Value: Quelle est la reponse a la vie, l'univers et ...
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Bad idea'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Mauvaise idee'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...

@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q8B_GoingDeeper
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 24
+  <Mood>k__BackingField: 0
+  <Expression>k__BackingField: 0
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      What do you want to do there on floor 42?'
+  - Language: 1
+    Value: "LiftBot:\nQu'est-ce que tu veux y faire \xE0 l'\xE9tage 42 ?"
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 31b0f98588b522245b8d1729c9574f5d, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 5
+    Locales:
+    - Language: 0
+      Value: It's work that brings me
+    - Language: 1
+      Value: C'est le travail qui m'amene
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        *Your* job? There''s nothing to do up there!'
+    - Language: 1
+      Value: "LiftBot:\n*Ton* travail ? Il n'y a rien \xE0 faire l\xE0-haut !"
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b7619a62fb6f3ea4180d4e13b1d66a27, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 6
+    Locales:
+    - Language: 0
+      Value: A personal matter
+    - Language: 1
+      Value: Une affaire pesonnelle
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        *Come on* you can at least tell your old friend Lifty!'
+    - Language: 1
+      Value: "LiftBot:\nAllez, tu peux tout dire \xE0 ton vieil ami Lifty !"
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: dd630946552783b4884f812c90ab92b9, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 0
+    Locales:
+    - Language: 0
+      Value: I have an appointment with someone
+    - Language: 1
+      Value: J'ai RDV avec quelqu'un
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        There''s nobody up there, or I''d know.'
+    - Language: 1
+      Value: "LiftBot:\nIl n'y a personne l\xE0-haut, sinon je le saurais"
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 33fe49876368f12499a77a6cfc0c902d, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 6
+    Locales:
+    - Language: 0
+      Value: I don't feel like talking about it
+    - Language: 1
+      Value: Je n'ai pas envie d'en parler
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Are you going through something difficult? Do you
+        want to talk about it?'
+    - Language: 1
+      Value: "LiftBot:\nTu traverses une \xE9preuve difficile ? Tu veux en parler
+        ?"
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...

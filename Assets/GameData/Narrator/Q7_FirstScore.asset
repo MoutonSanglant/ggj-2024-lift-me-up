@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q7_FirstScore
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 0
+  <Mood>k__BackingField: 0
+  <Expression>k__BackingField: 0
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      ...'
+  - Language: 1
+    Value: 'LiftBot:
+
+      ...'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 0c89104a3febc8248a913c945623e79d, type: 2}
+    <Score>k__BackingField: -1
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 5
+    Locales:
+    - Language: 0
+      Value: What's green, going up and down?
+    - Language: 1
+      Value: Qu'est-ce qui est vert, qui mont et qui descend ?
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        A pea in an elevator
+
+        Can''t you do better?'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Un petit pois dans un ascenceur
+
+        Tu n''a
+        pas mieux ?'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Wait, I know some better ones
+    - Language: 1
+      Value: Attends, j'en connais des meilleures
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 0c89104a3febc8248a913c945623e79d, type: 2}
+    <Score>k__BackingField: 1
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 1
+    Locales:
+    - Language: 0
+      Value: All in all, I'm happy here
+    - Language: 1
+      Value: Tout compte fait, je suis bien ici
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        You think you can fool me with reverse psychology?'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu crois m''avoir avec de la psychologie inversee
+        ?'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: At least I tried
+    - Language: 1
+      Value: Au moins, j'ai essaye

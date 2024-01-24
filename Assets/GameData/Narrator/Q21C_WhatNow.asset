@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q21C_WhatNow
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 41
+  <Mood>k__BackingField: 2
+  <Expression>k__BackingField: 6
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      I''m listening'
+  - Language: 1
+    Value: "LiftBot:\nJe t'\xE9coute"
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: e4e5790f1c88688418aafbfaeffeb5a7, type: 2}
+    <Score>k__BackingField: 1
+    <Mood>k__BackingField: 1
+    <Expression>k__BackingField: 2
+    Locales:
+    - Language: 0
+      Value: I'd like to move
+    - Language: 1
+      Value: J'ai envie de bouger
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        You''re right, it''s not healthy to stand still'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu as raison, ce n''est pas sain de rester immobile'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Actually...
+    - Language: 1
+      Value: En fait...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: fdf0316236360e9418bc1968d28c94cd, type: 2}
+    <Score>k__BackingField: 1
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 6
+    Locales:
+    - Language: 0
+      Value: My life is pointless
+    - Language: 1
+      Value: Ma vie n'a pas de sens
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Do you want to talk about it?'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu veux en parler ?'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Why not...
+    - Language: 1
+      Value: Pourquoi pas...

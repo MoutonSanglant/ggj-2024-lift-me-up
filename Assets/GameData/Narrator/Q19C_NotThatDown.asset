@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q19C_NotThatDown
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 41
+  <Mood>k__BackingField: 1
+  <Expression>k__BackingField: 2
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      We''re fine here
+
+      What do you think?'
+  - Language: 1
+    Value: 'LiftBot:
+
+      On est bien la
+
+      Qu''est-ce que tu en dis ?'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: c144be5df1b44ac45a1457ac7879d2e9, type: 2}
+    <Score>k__BackingField: 1
+    <Mood>k__BackingField: 1
+    <Expression>k__BackingField: 2
+    Locales:
+    - Language: 0
+      Value: Er... yes
+    - Language: 1
+      Value: Euh... oui
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        You''re right, let''s stay here'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Tu as raison, restons-ici'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Actually...
+    - Language: 1
+      Value: En fait...
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 1c765c1c75a120e4bbe43728f19885c6, type: 2}
+    <Score>k__BackingField: -1
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 6
+    Locales:
+    - Language: 0
+      Value: It's just a bit too low
+    - Language: 1
+      Value: C'est juste un poil trop bas
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        Ah... Really?'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Ah... Vraiment ?'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: ...
+    - Language: 1
+      Value: ...

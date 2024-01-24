@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: I0_Welcome
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 0
+  <Mood>k__BackingField: 0
+  <Expression>k__BackingField: 0
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      Hello employee N09-47, what can I do for you today?'
+  - Language: 1
+    Value: 'LiftBot:
+
+      Bonjour employe N09-47, que puis-je faire pour vous aujourd''hui
+      ?'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: ca9ab58b60f45aed9b5862d59345efd3, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 0
+    <Expression>k__BackingField: 0
+    Locales:
+    - Language: 0
+      Value: Hello, take me to floor 42
+    - Language: 1
+      Value: Bonjour, amene-moi a l'etage 42
+    PostSelectionLocales:
+    - Language: 0
+      Value: Alright, let's go
+    - Language: 1
+      Value: 'LiftBot:
+
+        Entendu, allons-y'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Thank you
+    - Language: 1
+      Value: Merci

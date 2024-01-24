@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130fd3580e7679b988544a74c752bf30, type: 3}
+  m_Name: Q14D_NoWay
+  m_EditorClassIdentifier: 
+  <Floor>k__BackingField: 101
+  <Mood>k__BackingField: 2
+  <Expression>k__BackingField: 9
+  Locales:
+  - Language: 0
+    Value: 'LiftBot:
+
+      42 ?! Noooo!!! All floors but *this one*!!!!'
+  - Language: 1
+    Value: 'LiftBot:
+
+      42 ?! Noooon !! Tous les etages mais pas *celui-ci* !!!'
+  <PlayerAnswers>k__BackingField:
+  - <NextDialog>k__BackingField: {fileID: 11400000, guid: ee3d327862e98af4595b687051a94ec0, type: 2}
+    <Score>k__BackingField: 0
+    <Mood>k__BackingField: 2
+    <Expression>k__BackingField: 6
+    Locales:
+    - Language: 0
+      Value: But...
+    - Language: 1
+      Value: Mais...
+    PostSelectionLocales:
+    - Language: 0
+      Value: 'LiftBot:
+
+        No way, don''t insist'
+    - Language: 1
+      Value: 'LiftBot:
+
+        Pas question, n''insiste pas'
+    PostSelectionButtonLocales:
+    - Language: 0
+      Value: Let me help you!
+    - Language: 1
+      Value: Laisse-moi t'aider !
