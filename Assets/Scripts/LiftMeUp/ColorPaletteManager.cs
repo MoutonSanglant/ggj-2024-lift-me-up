@@ -1,6 +1,8 @@
 using System;
 using System.Linq;
+using HelloGameDev;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace LiftMeUp
 {
@@ -18,6 +20,11 @@ namespace LiftMeUp
             Instance = this;
 
             SwitchPalette(StartMood);
+
+            SceneTransitionManager.OnSceneWillChange += () =>
+            {
+                OnPaletteChange = _ => { };
+            };
         }
 
         public static void SwitchPalette(Mood mood)

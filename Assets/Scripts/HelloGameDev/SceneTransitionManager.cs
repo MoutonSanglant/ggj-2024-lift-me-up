@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Eflatun.SceneReference;
 using UnityEngine;
@@ -26,8 +27,13 @@ namespace HelloGameDev
         private AudioSource _audioSource;
         private Animator _animator;
 
+        public static Action OnSceneWillChange = () => { };
+
         private void Awake()
         {
+            if (_instance != null)
+                Destroy(gameObject);
+
             _instance = this;
             _audioSource = GetComponent<AudioSource>();
             _animator = ScreenTransitionCanvasElement.GetComponent<Animator>();
@@ -52,6 +58,7 @@ namespace HelloGameDev
 
         public static void LoadScene(Scene scene)
         {
+            OnSceneWillChange.Invoke();
             _instance.StartCoroutine(_instance.Fade(1f, scene));
         }
 
