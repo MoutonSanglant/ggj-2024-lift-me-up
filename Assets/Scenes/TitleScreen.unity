@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.12107873, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -252,8 +252,8 @@ MonoBehaviour:
   EnableOnStart: 1
   Preload: 1
   PreloadDuration: 0.1
-  FadeInSound: {fileID: 8300000, guid: 55ce9261bc7c8904dab12e847c5a1304, type: 3}
-  FadeOutSound: {fileID: 8300000, guid: 882b6bc07d3d3e34ba66806fd4ae07c7, type: 3}
+  FadeInSound: {fileID: 8300000, guid: 21edd07da8de3ba488bbe5a469e0820d, type: 3}
+  FadeOutSound: {fileID: 0}
 --- !u!82 &65586694
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1142,7 +1142,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 0
-  orthographic size: 0.9
+  orthographic size: 1.155
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2

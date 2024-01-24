@@ -18,6 +18,14 @@ namespace LiftMeUp
         [SerializeField] private float TransitionDuration = 0.6f;
         [SerializeField] private Sprite TransitionExpression;
         [SerializeField] private LocalizationManager.Locale[] TransitionDisplayedMessage;
+        [SerializeField] private AudioSource MusicSource;
+        [SerializeField] private AudioClip ThemeCalm;
+        [SerializeField] private AudioClip ThemeHappy;
+        [SerializeField] private AudioClip ThemeSad;
+        [SerializeField] private AudioClip ThemeAngry;
+        [SerializeField] private AudioSource SfxSource;
+        [SerializeField] private AudioClip SfxDing;
+        [SerializeField] private AudioClip SfxLiftMove;
 
         [SerializeField] private NarratorDialog StartDialog;
         private static readonly int IsLifting = Animator.StringToHash("isLifting");
@@ -90,6 +98,7 @@ namespace LiftMeUp
                 DialogAvatar.sprite = expression;
                 NarratorPanel.text = answer.PostSelectionLocalizedText;
                 ColorPaletteManager.SwitchPalette(answer.Mood);
+                PlayTheme(answer.Mood);
 
                 for (var i = 0; i < PlayerAnswersButtons.Length; i++)
                 {
@@ -124,6 +133,7 @@ namespace LiftMeUp
                 NarratorPanel.text = dialog.LocalizedText;
                 FloorDisplay.text = dialog.Floor.ToString();
                 ColorPaletteManager.SwitchPalette(dialog.Mood);
+                PlayTheme(dialog.Mood);
 
                 for (var i = 0; i < PlayerAnswersButtons.Length; i++)
                 {
@@ -141,7 +151,8 @@ namespace LiftMeUp
         {
             TransitionAnimator.SetBool(IsLifting, true);
 
-            // TODO - start lift SFX
+            SfxSource.clip = SfxLiftMove;
+            SfxSource.Play();
 
             var elapsed = 0f;
             var currentFloor = int.Parse(FloorDisplay.text);
@@ -159,9 +170,35 @@ namespace LiftMeUp
             FloorDisplay.text = targetFloor.ToString();
             TransitionAnimator.SetBool(IsLifting, false);
 
-            // TODO - stop lift SFX and play "ding" SFX
+            SfxSource.Stop();
+            SfxSource.PlayOneShot(SfxDing);
 
             callback.Invoke();
+        }
+
+        private void PlayTheme(ColorPaletteManager.Mood mood)
+        {
+            var clip = GetTheme(mood);
+
+            if (clip != MusicSource.clip)
+            {
+                MusicSource.Stop();
+                MusicSource.clip = clip;
+                MusicSource.Play();
+            }
+        }
+
+        private AudioClip GetTheme(ColorPaletteManager.Mood mood)
+        {
+            return mood switch
+            {
+                ColorPaletteManager.Mood.Neutral => ThemeCalm,
+                ColorPaletteManager.Mood.Happy => ThemeHappy,
+                ColorPaletteManager.Mood.Sad => ThemeSad,
+                ColorPaletteManager.Mood.Angry => ThemeAngry,
+                ColorPaletteManager.Mood.GameOver => ThemeAngry,
+                _ => ThemeCalm
+            };
         }
     }
 }
