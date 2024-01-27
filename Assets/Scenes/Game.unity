@@ -1167,8 +1167,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4b825e72ce6ea433597348d6029d3dd3, type: 2}
-  m_sharedMaterial: {fileID: 3636668258444811375, guid: 4b825e72ce6ea433597348d6029d3dd3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3445dfcef3af06342b4b2caef6230fbe, type: 2}
+  m_sharedMaterial: {fileID: 1467438128627219664, guid: 3445dfcef3af06342b4b2caef6230fbe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1192,8 +1192,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 7
+  m_fontSizeBase: 7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2461,7 +2461,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 0
-  orthographic size: 1.155
+  orthographic size: 0.9
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2

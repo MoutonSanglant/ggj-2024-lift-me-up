@@ -477,7 +477,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6976599751152922927}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -720,7 +720,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8576789916483124929}
   m_HandleRect: {fileID: 1502300880723633329}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -897,7 +897,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 7061501731362282015}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.26311693
+  m_Size: 0.2537355
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1519,8 +1519,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 151.5, y: 0}
-  m_SizeDelta: {x: 263, y: 0}
+  m_AnchoredPosition: {x: 151.49998, y: 0}
+  m_SizeDelta: {x: 262.99997, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9035033408184695145
 CanvasRenderer:
@@ -1555,7 +1555,8 @@ MonoBehaviour:
     Design</b></size>\nThierry \"vx\" Defresne\n\n\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-\r\n<size=12><b>Arts</b></size>\nThierry
     \"vx\" Defresne\n\n\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-\r\n<size=12><b>Code</b></size>\nThierry
     \"vx\" Defresne\n\n\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-\r\n<size=12><b>Fonts</b></size>\nMewMewDevArt
-    - <link=\"MewMewPixelFontHome\">Website</link> [<link=\"MewMewPixelFontLicense\">License</link>]\n\n\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-\r\n<size=12><b>Special
+    - <link=\"MewMewPixelFontHome\">Website</link> [<link=\"MewMewPixelFontLicense\">License</link>]\nConnection
+    Serif by Jasper @ KineticPlasma Fonts - [<link=\"ConnectionSerifFontLicense\">License</link>]\n\n\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-\r\n<size=12><b>Special
     Thanks</b></size>\nEsmeralda Jimenez Defresne\nEmmanuelle & Eric Defresne"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b825e72ce6ea433597348d6029d3dd3, type: 2}
