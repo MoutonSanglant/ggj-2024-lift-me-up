@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6072347054679995878, guid: 9f6fd5d8038b11e4ab9ce71776a855c0, type: 3}
       propertyPath: m_fontSize
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6072347054679995878, guid: 9f6fd5d8038b11e4ab9ce71776a855c0, type: 3}
       propertyPath: m_fontAsset
@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 3445dfcef3af06342b4b2caef6230fbe, type: 2}
     - target: {fileID: 6072347054679995878, guid: 9f6fd5d8038b11e4ab9ce71776a855c0, type: 3}
       propertyPath: m_fontSizeBase
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6072347054679995878, guid: 9f6fd5d8038b11e4ab9ce71776a855c0, type: 3}
       propertyPath: m_enableKerning
