@@ -15,17 +15,26 @@ namespace LiftMeUp
         {
             ColorPaletteManager.OnPaletteChange += SetPalette;
 
+            var buttonTarget = GetComponent<Button>();
             var imageTarget = GetComponent<Image>();
+            var textTarget = GetComponent<TMP_Text>();
 
-            if (imageTarget)
+            if (buttonTarget)
+            {
+                TargetAction += color =>
+                {
+                    var colors = buttonTarget.colors;
+                    colors.normalColor = color;
+                    buttonTarget.colors = colors;
+                };
+            }
+            else if (imageTarget)
             {
                 TargetAction += color =>
                 {
                     imageTarget.color = color;
                 };
             }
-
-            var textTarget = GetComponent<TMP_Text>();
 
             if (textTarget)
             {
