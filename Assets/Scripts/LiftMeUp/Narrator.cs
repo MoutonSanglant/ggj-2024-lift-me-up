@@ -31,6 +31,8 @@ namespace LiftMeUp
         [SerializeField] private NarratorDialog StartDialog;
         private static readonly int IsLifting = Animator.StringToHash("isLifting");
 
+        public static Action<int> onScoreChange = _ => { };
+
         private int _score;
 
         public static Narrator Instance { get; private set; }
@@ -102,6 +104,7 @@ namespace LiftMeUp
                 var expression = LiftExpressionManager.GetSpriteFromState(answer.Expression);
 
                 _score += answer.Score;
+                onScoreChange.Invoke(_score);
                 LiftAvatar.sprite = expression;
                 DialogAvatar.sprite = expression;
                 NarratorPanel.text = answer.PostSelectionLocalizedText;
