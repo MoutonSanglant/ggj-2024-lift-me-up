@@ -9,6 +9,10 @@ namespace HelloGameDev.Views
     {
         // URLs to open when links clicked
         private const string MewMewPixelFontHomePageUrl = "https://mewmewdevart.itch.io/minimal-font-in-pixelart";
+        private const string ObsidianMelodiaSoundtrack1Url = "https://www.youtube.com/watch?v=oGtJ7A8AC7Q";
+        private const string ObsidianMelodiaSoundtrack2Url = "https://www.youtube.com/watch?v=hJncFeJDD_k";
+        private const string ObsidianMelodiaSoundtrack3Url = "https://www.youtube.com/watch?v=EGaMI9s_Mzc";
+        private const string ObsidianMelodiaSoundtrack4Url = "https://www.youtube.com/watch?v=fhTKwA0PBE0";
 
         [SerializeField, Tooltip("The UI GameObject having the TextMesh Pro component.")]
         private TMP_Text Text = default;
@@ -183,6 +187,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE."
                 var url = linkId switch
                 {
                     "MewMewPixelFontHome" => MewMewPixelFontHomePageUrl,
+                    "ObsidianMelodiaSoundtrack1" => ObsidianMelodiaSoundtrack1Url,
+                    "ObsidianMelodiaSoundtrack2" => ObsidianMelodiaSoundtrack2Url,
+                    "ObsidianMelodiaSoundtrack3" => ObsidianMelodiaSoundtrack3Url,
+                    "ObsidianMelodiaSoundtrack4" => ObsidianMelodiaSoundtrack4Url,
                     _ => ""
                 };
 
