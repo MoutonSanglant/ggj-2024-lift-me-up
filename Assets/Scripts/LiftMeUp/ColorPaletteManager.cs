@@ -13,6 +13,7 @@ namespace LiftMeUp
 
         public static ColorPaletteManager Instance { get; private set; }
 
+        public static Action<Mood> OnMoodChange = _ => { };
         public static Action<Palette> OnPaletteChange = _ => { };
 
         private void Awake()
@@ -27,6 +28,7 @@ namespace LiftMeUp
 
             SceneTransitionManager.OnSceneWillChange += () =>
             {
+                OnMoodChange = _ => { };
                 OnPaletteChange = _ => { };
             };
 
@@ -46,6 +48,7 @@ namespace LiftMeUp
                 return;
             }
 
+            OnMoodChange.Invoke(mood);
             OnPaletteChange.Invoke(palette);
         }
 
