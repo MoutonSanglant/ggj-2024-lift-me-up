@@ -25,7 +25,8 @@ MonoBehaviour:
 
       Quoi ?'
   <PlayerAnswers>k__BackingField:
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: a3509ab79b04fa54db4b719794af35c2, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: a3509ab79b04fa54db4b719794af35c2, type: 2}
     <Score>k__BackingField: 0
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 0
@@ -47,4 +48,4 @@ MonoBehaviour:
     - Language: 0
       Value: In other words...
     - Language: 1
-      Value: "C'est \xE0 dire que..."
+      Value: C'est a dire que...

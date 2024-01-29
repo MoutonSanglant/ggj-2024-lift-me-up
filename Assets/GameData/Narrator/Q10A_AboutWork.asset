@@ -25,7 +25,8 @@ MonoBehaviour:
 
       Et c''est quoi ton travail ?'
   <PlayerAnswers>k__BackingField:
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 40d1559a1a66853408c409de55b37101, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: 40d1559a1a66853408c409de55b37101, type: 2}
     <Score>k__BackingField: 0
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 5
@@ -48,7 +49,8 @@ MonoBehaviour:
       Value: You're the one who asked
     - Language: 1
       Value: C'est toi qui a demande
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
     <Score>k__BackingField: -2
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 5
@@ -71,7 +73,8 @@ MonoBehaviour:
       Value: ...
     - Language: 1
       Value: ...
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
     <Score>k__BackingField: -1
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 0
@@ -79,7 +82,7 @@ MonoBehaviour:
     - Language: 0
       Value: 2 times 21 equals?
     - Language: 1
-      Value: "2 fois 21 \xE9gal ?"
+      Value: 2 fois 21 egal ?
     PostSelectionLocales:
     - Language: 0
       Value: 'LiftBot:
@@ -94,7 +97,8 @@ MonoBehaviour:
       Value: Too bad
     - Language: 1
       Value: Dommage
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: 40d1559a1a66853408c409de55b37101, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: 40d1559a1a66853408c409de55b37101, type: 2}
     <Score>k__BackingField: 1
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 1

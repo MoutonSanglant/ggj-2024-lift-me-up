@@ -21,9 +21,12 @@ MonoBehaviour:
 
       I''m listening'
   - Language: 1
-    Value: "LiftBot:\nJe t'\xE9coute"
+    Value: 'LiftBot:
+
+      Je t''ecoute'
   <PlayerAnswers>k__BackingField:
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: e4e5790f1c88688418aafbfaeffeb5a7, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: e4e5790f1c88688418aafbfaeffeb5a7, type: 2}
     <Score>k__BackingField: 1
     <Mood>k__BackingField: 1
     <Expression>k__BackingField: 2
@@ -46,7 +49,8 @@ MonoBehaviour:
       Value: Actually...
     - Language: 1
       Value: En fait...
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: fdf0316236360e9418bc1968d28c94cd, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: fdf0316236360e9418bc1968d28c94cd, type: 2}
     <Score>k__BackingField: 1
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 6

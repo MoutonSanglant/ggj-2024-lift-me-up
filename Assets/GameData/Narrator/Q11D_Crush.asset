@@ -25,7 +25,8 @@ MonoBehaviour:
 
       Un rencard ?? Tu me met dans la confidence ?'
   <PlayerAnswers>k__BackingField:
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: d86ea4cc473fb044abf8d5fa9ee96a50, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: d86ea4cc473fb044abf8d5fa9ee96a50, type: 2}
     <Score>k__BackingField: 1
     <Mood>k__BackingField: 1
     <Expression>k__BackingField: 12
@@ -48,7 +49,8 @@ MonoBehaviour:
       Value: What?!
     - Language: 1
       Value: Quoi ?!
-  - <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
+  - <BackToTitleScreen>k__BackingField: 0
+    <NextDialog>k__BackingField: {fileID: 11400000, guid: b4ff80dadbdf09a49ac37c823e9eab57, type: 2}
     <Score>k__BackingField: -1
     <Mood>k__BackingField: 0
     <Expression>k__BackingField: 5
@@ -63,7 +65,9 @@ MonoBehaviour:
 
         Seriously? You''re worse than boring as a colleague...'
     - Language: 1
-      Value: "LiftBot:\nS\xE9rieux ? T'es pire que l'ennui comme collegue..."
+      Value: 'LiftBot:
+
+        Serieux ? T''es pire que l''ennui comme collegue...'
     PostSelectionButtonLocales:
     - Language: 0
       Value: ...
